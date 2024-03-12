@@ -1,8 +1,6 @@
 import type {Metadata} from "next";
-
-// import {Button} from "@/components/ui/button";
-
 import "./globals.css";
+// import {Button} from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Ciudadania",
@@ -12,19 +10,13 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body className="px-4 antialiased">
-        <header className="flex justify-center bg-gray-100 p-4 ">
-          <h1 className="text-2xl font-bold">Ciudadania Italiana</h1>
-          {/* <div className="space-x-4">
-            <Button className="px-4 py-2" variant="outline">
-              Login
-            </Button>
-            <Button className="px-4 py-2" variant="outline">
-              Sign Up
-            </Button>
-          </div> */}
+      <body className="full-w px-10  antialiased">
+        <header className="flex flex-row justify-between  p-4 ">
+          <a href="/">
+            <h1 className="text-2xl font-bold">Ciudadania Italiana</h1>
+          </a>
         </header>
-        <main className="mx-auto p-4">{children}</main>
+        <main className="mx-auto max-w-4xl p-4">{children}</main>
         <footer className="text-center leading-[4rem] opacity-70">
           © {new Date().getFullYear()} Ciudadania
         </footer>
