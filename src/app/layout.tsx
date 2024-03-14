@@ -13,8 +13,8 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="es">
-      <body className="flex gap-4 full-w min-h-screen px-10 antialiased">
-        <header className="flex p-4">
+      <body className="flex gap-4 full-w min-h-screen px-4 lg:px-12 antialiased">
+        <header className="flex py-4">
           <a href="/">
             <h1 className="text-2xl font-bold">Ciudadania Italiana</h1>
           </a>
