@@ -1,13 +1,10 @@
+import AuthForm from "./auth-form";
 import SelectAvo from "@/components/custom/selectAvo";
 
-import AuthForm from "./auth-form";
-
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
-    <div className="h-screen">
-      <div className="col-6 auth-widget">
-        <AuthForm />
-      </div>
+    <div className="flex flex-col gap-4">
+      <AuthForm />
       <SelectAvo />
     </div>
   );
